@@ -10,14 +10,22 @@ export default defineConfig({
       { text: '文章', link: '/articles' },
     ],
 
-    sidebar: [
-      {
-        text: '文章',
-        items: [
-          { text: '所有文章', link: '/articles' },
-        ]
-      }
-    ],
+    sidebar: {
+      '/': [
+        {
+          text: '文章',
+          items: [
+            { text: '所有文章', link: '/articles' },
+          ]
+        },
+        {
+          text: 'AI & 深度学习',
+          items: [
+            { text: '深度学习入门', link: '/ai/deep-learning-intro' },
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/stevenzhangdongyu' }
